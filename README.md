@@ -15,7 +15,10 @@
 
 ### Demo
 
-<pre><code>
+<pre>
+
+<code>
+
     Thread* ts1 = new ThreadStuff("模块1"); 
     Thread* ts2 = new ThreadStuff("模块2", 0.8);
     Thread* ts3 = new ThreadStuff("模块3", 3);
@@ -36,14 +39,17 @@
     delete ts2;
     delete ts3;
     delete ts4; delete ts5;
-</code></pre>
+
+</code>
+
+</pre>
 
 
 ### 运行截图
 
 <pre>
 
-<font color="white" size = "6px">
+<div style="background:#000;color:#FFF;font-size:10px;">
 
 $ ./demo
 模块1 thread_msg 线程启动；
@@ -513,10 +519,8 @@ $ ./demo
 通信模块 等到了 cond_remove, 并重新加上了锁;
 ---------------------------当前队列的长度:0
 
-</font>
-
+</div>
 </pre>
-
 
 <pre>
 cygwin $
@@ -531,14 +535,12 @@ Swap:  2471912k total,  1455796k used,  1016116k free,        0k cached
 
   PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND
 12612 Administ   8   0 80192  81m  18m R    2  3.4   0:00.42 top
-
 <div style="background:#000; color:#FFF">13260 Administ   8   0 76736  46m  11m T    0  1.9   0:00.09 demo</div>
-
- 8356 Administ   8   0 99968  69m  18m S    0  2.9   0:01.45 bash
+8356 Administ   8   0 99968  69m  18m S    0  2.9   0:01.45 bash
  9744 Administ   8   0  187m 355m 160m R    0 14.7   1:38.96 mintty
 
-
 </pre>
+
 --------------------------------------------------------
 
 ####[LICENSE](./LICENSE)
