@@ -40,8 +40,9 @@
 
 
 ##### 运行截图
-<pre><code>
-<div style="background:#000; color:#FFF">
+
+<pre>
+<font color="white">
 $ ./demo
 模块1 thread_msg 线程启动；
 模块1 thread_msg: 欲要加锁;
@@ -509,8 +510,10 @@ $ ./demo
 模五  wait(自己的cond), 并释放锁;
 通信模块 等到了 cond_remove, 并重新加上了锁;
 ---------------------------当前队列的长度:0
-</div>
-</code></pre>
+
+</font>
+</pre>
+
 
 <pre>
 cygwin $
