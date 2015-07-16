@@ -47,9 +47,19 @@
 
 ### 运行截图
 
+
+<style>
+.divbw {
+background:#000;color:#FFF;font-size:10px;
+}
+.divtop {
+background:#000;color:#FFF;
+}
+</style>
+
 <pre>
 
-<div style="background:#000;color:#FFF;font-size:10px;">
+<div class="divbw">
 
 $ ./demo
 模块1 thread_msg 线程启动；
@@ -535,7 +545,7 @@ Swap:  2471912k total,  1455796k used,  1016116k free,        0k cached
 
   PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND
 12612 Administ   8   0 80192  81m  18m R    2  3.4   0:00.42 top
-<div style="background:#000; color:#FFF">13260 Administ   8   0 76736  46m  11m T    0  1.9   0:00.09 demo</div>
+<span class="divtop">13260 Administ   8   0 76736  46m  11m T    0  1.9   0:00.09 demo</span>
 8356 Administ   8   0 99968  69m  18m S    0  2.9   0:01.45 bash
  9744 Administ   8   0  187m 355m 160m R    0 14.7   1:38.96 mintty
 
