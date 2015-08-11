@@ -6,9 +6,10 @@ int ThreadLead::instance_counter = 0;
 ThreadLead* ThreadLead::instance = NULL;
 
 ThreadLead* ThreadLead::get_instance() {
-    if (!instance_counter) {
+    if (instance_counter <= 0) {
         instance = new ThreadLead;
-        ++instance_counter;
+        //++instance_counter;
+        instance_counter = 1;
         return instance;
     }
     if (instance) ++instance_counter;
