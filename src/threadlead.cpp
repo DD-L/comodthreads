@@ -2,7 +2,7 @@
 #include "threadlead.h"
 
 queue<data_t> ThreadLead::queue_lead;
-size_t ThreadLead::instance_counter = 0;
+int ThreadLead::instance_counter = 0;
 ThreadLead* ThreadLead::instance = NULL;
 
 ThreadLead* ThreadLead::get_instance() {
@@ -17,6 +17,7 @@ ThreadLead* ThreadLead::get_instance() {
 void ThreadLead::release() {
     if (--instance_counter <= 0) {
         delete instance;
+		instance_counter = 0;
     }
 }
 

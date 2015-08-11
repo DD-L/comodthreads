@@ -38,7 +38,7 @@ private:
     // 统计工作模块个数的计数器
     size_t stuff_counter;
     // 单例模式用到的计数器
-    static size_t instance_counter;
+    static int instance_counter;
     // 唯一实例
     static ThreadLead* instance;
     // 实例的 消息分配模块是否已经在运行
